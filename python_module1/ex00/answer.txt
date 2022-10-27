@@ -1,0 +1,5 @@
+pip list
+pip show numpy && cat ~/sgoinfre/miniconda3/envs/42AI-$USER/conda-meta/numpy-1*.json 
+pip uninstall numpy
+pip install numpy
+pip list > requirement.txt
