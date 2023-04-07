@@ -23,6 +23,9 @@ value1 = int(sys.argv[1])
 value2 = int(sys.argv[2])
 
 print("Sum:       ", value1 + value2)
+print("Difference:", value1 - value2)
+print("Product:   ", value1 * value2)
+try:
     print("Quotient:  ", value1 / value2)
     print("Remainder: ", value1 % value2)
 except ZeroDivisionError:

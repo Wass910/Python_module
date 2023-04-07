@@ -5,7 +5,7 @@ import random
 if __name__ != "__main__":
     sys.exit()
 
-nb_to_find = random.randint(40, 43)
+nb_to_find = random.randint(1, 99)
 nb_try = 0
 print("""This is an interactive guessing game!
 You have to enter a number between 1 and 99 to find out the secret number.
@@ -22,6 +22,7 @@ while 1:
             print("Goodbye !")
             quit()
         print("Please enter a valid answer.")
+        nb_try = nb_try + 1
     else:
         nb_try = nb_try + 1
         if nb > nb_to_find:

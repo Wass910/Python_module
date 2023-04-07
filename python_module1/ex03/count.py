@@ -22,9 +22,9 @@ def text_analyzer(s):
             nb_space+=1
         elif a in string.punctuation:
             nb_ponc+=1
-        elif (a > "A" and a < "Z"):
+        elif (a >= "A" and a <= "Z"):
             nb_upper+=1
-        elif (a > "a" and a < "z"):
+        elif (a >= "a" and a <= "z"):
             nb_lower+=1
         
     print("The text contains" , len(s) , "character(s):")
